@@ -58,11 +58,11 @@ public class WeaponController : MonoBehaviour
     {
         // Handle the special shooting pattern with a delay
         Shoot(); // First shot
-        yield return new WaitForSeconds(0.3f); // Wait for 0.3 seconds
+        yield return new WaitForSeconds(0.2f); // Wait for 0.3 seconds
         Shoot(); // Second shot after delay
-        yield return new WaitForSeconds(0.3f); // Wait for 0.3 seconds
+        yield return new WaitForSeconds(0.2f); // Wait for 0.3 seconds
         Shoot(); // Third shot after delay
-        yield return new WaitForSeconds(0.3f); // Wait for 0.3 seconds
+        yield return new WaitForSeconds(0.2f); // Wait for 0.3 seconds
         Shoot(); // Fourth shot after delay
 
         // Reset the special cooldown after using it
