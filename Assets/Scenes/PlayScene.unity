@@ -577,8 +577,9 @@ GameObject:
   - component: {fileID: 415271619}
   - component: {fileID: 415271618}
   - component: {fileID: 415271617}
+  - component: {fileID: 415271620}
   m_Layer: 0
-  m_Name: Player (1)
+  m_Name: PlayerBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -663,6 +664,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415271615}
   m_Mesh: {fileID: 0}
+--- !u!114 &415271620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415271615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1faac388ee6eb4ab58c2d0d7c313a4e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1274025309013021233, guid: 678754c44042f400eae41e9b5d608a71, type: 3}
+  speed: 10
+  damage: 0
+  cooldown: 1
+  currentCooldown: 0
+  pierce: 0
 --- !u!4 &421129710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: accfade4b7114f24783256bf071c25c2, type: 3}
