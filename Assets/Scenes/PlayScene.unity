@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &29889960 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1641991309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &75334814
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +232,125 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75334814}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &218991145 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1705594443}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &339631037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 339631038}
+  m_Layer: 0
+  m_Name: Water (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &339631038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339631037}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -141.81, y: -3.8341029, z: -11.400002}
+  m_LocalScale: {x: 1, y: 1, z: 1.7}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2002296182}
+  - {fileID: 1093661644}
+  - {fileID: 987150143}
+  - {fileID: 384740735}
+  m_Father: {fileID: 1611733210}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &345337977
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 339631038}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -32.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!4 &382859939 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1951246196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &384740735 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 757968379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &415271615
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +470,292 @@ MonoBehaviour:
   specialCooldown: 4
   currentSpecialCooldown: 0
   pierce: 0
+--- !u!1 &417860422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 417860423}
+  m_Layer: 0
+  m_Name: Water (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &417860423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417860422}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 111.09, y: -3.8341029, z: -11.400002}
+  m_LocalScale: {x: 1, y: 1, z: 1.7}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1892989047}
+  - {fileID: 382859939}
+  - {fileID: 626092105}
+  - {fileID: 459174212}
+  m_Father: {fileID: 1611733210}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &459174212 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1410815333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &539482804
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 417860423}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 55.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1 &562619232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562619233}
+  m_Layer: 0
+  m_Name: Water (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562619233
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562619232}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 49.589996, y: -3.8341029, z: -33.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1494808559}
+  - {fileID: 1592873039}
+  - {fileID: 1061994822}
+  m_Father: {fileID: 1611733210}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1001 &573912360
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1035170975}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -76.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!4 &576739091 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1224936357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &609092250
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1425823661}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 45.39998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
 --- !u!1 &619502792
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +784,7 @@ Transform:
   m_GameObject: {fileID: 619502792}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: 5}
+  m_LocalPosition: {x: 6, y: 0, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -452,6 +862,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619502792}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &624349000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1035170975}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!4 &626092105 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 539482804}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,6 +1030,85 @@ Transform:
   m_Children: []
   m_Father: {fileID: 886961540}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &722708388 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1434764653}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &749737090 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 609092250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &757968379
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 339631038}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
 --- !u!1 &788453598
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,8 +1142,88 @@ Transform:
   - {fileID: 1138920421}
   - {fileID: 1004336901}
   - {fileID: 619502793}
+  - {fileID: 1611733210}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &801692586 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1004159776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &847847807 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1460942372}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &871783034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1441093735}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 55.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
 --- !u!1 &886961533
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,7 +1354,7 @@ Transform:
   m_GameObject: {fileID: 886961533}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.73, z: 0}
+  m_LocalPosition: {x: 14.61, y: 1.73, z: 28.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -735,6 +1378,223 @@ MonoBehaviour:
   sprintSpeed: 7
   groundCheckDistance: 0.2
   mainCamera: {fileID: 963194227}
+--- !u!4 &897315114 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1411407917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &919097746
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 339631038}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 55.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!4 &919937852 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 624349000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &945927513
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1441093735}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -76.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1001 &956583771
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1425823661}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.9999847
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4771588
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.87881714
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 123
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,6 +1702,80 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 886961540}
   offset: {x: 0, y: 25, z: -15}
+--- !u!4 &987150143 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 919097746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1004159776
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1035170975}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 55.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
 --- !u!1 &1004336900
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,7 +1804,7 @@ Transform:
   m_GameObject: {fileID: 1004336900}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: 5}
+  m_LocalPosition: {x: -6, y: 0, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -948,6 +1882,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004336900}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1035170974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1035170975}
+  m_Layer: 0
+  m_Name: Water (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1035170975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035170974}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 2.6899996, y: -3.8341029, z: -160.09999}
+  m_LocalScale: {x: 1, y: 1, z: 1.7}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 576739091}
+  - {fileID: 2047529263}
+  - {fileID: 801692586}
+  - {fileID: 919937852}
+  m_Father: {fileID: 1611733210}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!4 &1061994822 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1580756460}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1093661644 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1648811779}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1138920420
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,10 +1955,13 @@ Transform:
   m_GameObject: {fileID: 1138920420}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: -5}
+  m_LocalPosition: {x: -6, y: 0, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1817268384}
+  - {fileID: 1963451268}
+  - {fileID: 1225803938}
   m_Father: {fileID: 788453599}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1138920422
@@ -1054,6 +2036,825 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138920420}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1201520104
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1297524699}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.9999847
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4771588
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.87881714
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 123
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1001 &1224936357
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1035170975}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -32.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1001 &1225803937
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1138920421}
+    m_Modifications:
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.8884287
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7844696
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948859278943611584, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_Name
+      value: pyramid (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+--- !u!4 &1225803938 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+  m_PrefabInstance: {fileID: 1225803937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1264850748
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 417860423}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -32.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1 &1297524698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1297524699}
+  m_Layer: 0
+  m_Name: Water (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1297524699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297524698}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -92.61, y: -3.8341029, z: -33.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1526444717}
+  - {fileID: 218991145}
+  - {fileID: 2127664947}
+  m_Father: {fileID: 1611733210}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!4 &1324308479 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 2015234680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1410815333
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 417860423}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1001 &1411407917
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2115066769}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 45.39998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!4 &1414522131 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1524416834}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1425823660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1425823661}
+  m_Layer: 0
+  m_Name: Water (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1425823661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425823660}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.61, y: -3.8341029, z: -105.59999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 847847807}
+  - {fileID: 749737090}
+  - {fileID: 2023184638}
+  m_Father: {fileID: 1611733210}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1434764653
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2115066769}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.9999847
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4771588
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.87881714
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 123
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1 &1441093734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1441093735}
+  m_Layer: 0
+  m_Name: Water (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1441093735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441093734}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 2.6899996, y: -3.8341029, z: 102.40001}
+  m_LocalScale: {x: 1, y: 1, z: 1.7}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2125026773}
+  - {fileID: 1486413278}
+  - {fileID: 2027998485}
+  - {fileID: 1414522131}
+  m_Father: {fileID: 1611733210}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1001 &1460942372
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1425823661}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -32.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!4 &1486413278 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 945927513}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1494808559 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1536441087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1524416834
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1441093735}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!4 &1526444717 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1687211082}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1536441087
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 562619233}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -32.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
 --- !u!1 &1557086938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,12 +2955,887 @@ Transform:
   m_GameObject: {fileID: 1557086938}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: -5}
+  m_LocalPosition: {x: 6, y: 0, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 788453599}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1580756460
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 562619233}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.9999847
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4771588
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.87881714
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 123
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!4 &1592873039 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1960900926}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1611733209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611733210}
+  m_Layer: 0
+  m_Name: water
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1611733210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611733209}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.461, y: 1.73, z: 2.8200002}
+  m_LocalScale: {x: 0.1, y: 1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2115066769}
+  - {fileID: 1441093735}
+  - {fileID: 1035170975}
+  - {fileID: 417860423}
+  - {fileID: 339631038}
+  - {fileID: 1425823661}
+  - {fileID: 562619233}
+  - {fileID: 1297524699}
+  m_Father: {fileID: 788453599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1641991309
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2115066769}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -64.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1001 &1648811779
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 339631038}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -76.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1001 &1687211082
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1297524699}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -32.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1001 &1705594443
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1297524699}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 45.39998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1001 &1768869843
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1441093735}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -32.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1001 &1817268383
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1138920421}
+    m_Modifications:
+    - target: {fileID: 2465726488859176464, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465726488859176464, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465726488859176464, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.6343818
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465726488859176464, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465726488859176464, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.8699532
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465726488859176464, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465726488859176464, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465726488859176464, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465726488859176464, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465726488859176464, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465726488859176464, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465726488859176464, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2986965731713266858, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+      propertyPath: m_Name
+      value: pyramid 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+--- !u!4 &1817268384 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2465726488859176464, guid: 37506a9a582ca9d4d8de2edb16f90a48, type: 3}
+  m_PrefabInstance: {fileID: 1817268383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1892989047 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1264850748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1951246196
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 417860423}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -76.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1001 &1960900926
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 562619233}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 45.39998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!1001 &1963451267
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1138920421}
+    m_Modifications:
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9406343
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.66597414
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948859278943611584, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+      propertyPath: m_Name
+      value: pyramid
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+--- !u!4 &1963451268 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7285651888474697850, guid: 30c6db028d9061e4fa1c6a915ad010e4, type: 3}
+  m_PrefabInstance: {fileID: 1963451267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2002296182 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 345337977}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2015234680
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2115066769}
+    m_Modifications:
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8958972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -32.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802854159405099236, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+      propertyPath: m_Name
+      value: water location christmas village
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+--- !u!4 &2023184638 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 956583771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2027998485 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 871783034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2047529263 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 573912360}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2115066768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2115066769}
+  m_Layer: 0
+  m_Name: Water
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2115066769
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115066768}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.61, y: -3.8341029, z: 35.800014}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1324308479}
+  - {fileID: 29889960}
+  - {fileID: 897315114}
+  - {fileID: 722708388}
+  m_Father: {fileID: 1611733210}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2125026773 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1768869843}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2127664947 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7422669034240701022, guid: 5f7c27b451d103742ac0c4c83f58aeb5, type: 3}
+  m_PrefabInstance: {fileID: 1201520104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2773025377649764792
 PrefabInstance:
   m_ObjectHideFlags: 0
