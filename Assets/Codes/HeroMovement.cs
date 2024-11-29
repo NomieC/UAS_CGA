@@ -34,8 +34,6 @@ public class HeroMovement : MonoBehaviour
 
         // Move the character
         MoveCharacter(move, currentSpeed);
-
-        // Make the character face the mouse cursor
     }
 
     void MoveCharacter(Vector3 move, float speed)
@@ -45,23 +43,5 @@ public class HeroMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement);
     }
 
-    void MouseFollow()
-    {
-        // Get the mouse position in screen space
-        Vector3 mouseScreenPosition = Input.mousePosition;
 
-        // Convert the mouse position to world space
-        // Set the Z position to a value that makes sense in your game (e.g., 10 units away from the camera)
-        mouseScreenPosition.z = mainCamera.nearClipPlane; // Adjust this as needed for your camera's setup
-        Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mouseScreenPosition);
-
-        // Calculate the direction from the player to the mouse position
-        Vector3 direction = mouseWorldPosition - transform.position;
-
-        // Calculate the angle to rotate the player
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-        // Set the player's rotation
-        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-    }
 }
