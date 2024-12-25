@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public EnemyScriptable enemyStatus;
     Transform player;
-    public float moveSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +15,6 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemyStatus.MoveSpeed * Time.deltaTime);
     }
 }

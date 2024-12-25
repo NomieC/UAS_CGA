@@ -5,14 +5,10 @@ using UnityEngine;
 public class WeaponController : MonoBehaviour
 {
     [Header("Weapon Stats")]
-    public GameObject prefab;
-    public float speed;
-    public float damage;
-    public float cooldown;
+    public WeaponScriptable weaponStatus;
     public float currentCooldown;
-    public float specialCooldown;
     public float currentSpecialCooldown;
-    public int pierce;
+
 
     protected HeroMovement hm;
 
@@ -24,8 +20,8 @@ public class WeaponController : MonoBehaviour
     protected virtual void Start()
     {
         hm = FindObjectOfType<HeroMovement>();
-        currentCooldown = cooldown;
-        currentSpecialCooldown = specialCooldown; // Initialize the special cooldown
+        currentCooldown = weaponStatus.Cooldown;
+        currentSpecialCooldown = weaponStatus.SpecialCooldown; // Initialize the special cooldown
     }
 
     // Update is called once per frame
@@ -66,12 +62,12 @@ public class WeaponController : MonoBehaviour
         Shoot(); // Fourth shot after delay
 
         // Reset the special cooldown after using it
-        currentSpecialCooldown = specialCooldown; // Reset to the original special cooldown
+        currentSpecialCooldown = weaponStatus.SpecialCooldown; // Reset to the original special cooldown
     }
 
     protected virtual void Shoot()
     {
         // Handle the shooting logic here (e.g., spawn bullets, set direction, etc.)
-        currentCooldown = cooldown; // Reset the cooldown after each shoot
+        currentCooldown = weaponStatus.Cooldown; // Reset the cooldown after each shoot
     }
 }
