@@ -15,7 +15,7 @@ public class BulletController : WeaponController
         base.Shoot();
 
         // Instantiate the bullet prefab
-        GameObject spawnedBullet = Instantiate(prefab);
+        GameObject spawnedBullet = Instantiate(weaponStatus.Prefab);
         spawnedBullet.transform.position = transform.position;
 
         // Calculate the direction to the mouse position

@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class BulletBehaviour : ProjectileBehaviour
 {
-    private BulletController bc;
+   
     private Vector3 bulletDirection;  // To store the bullet's movement direction
 
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
-        bc = FindObjectOfType<BulletController>();
     }
 
     // Method to set the bullet's direction
@@ -27,7 +26,7 @@ public class BulletBehaviour : ProjectileBehaviour
         // Move the bullet in the specified direction at the set speed
         if (bulletDirection != Vector3.zero)
         {
-            transform.position += bulletDirection * bc.speed * Time.deltaTime;
+            transform.position += bulletDirection * weaponStatus.Speed * Time.deltaTime;
         }
     }
 }

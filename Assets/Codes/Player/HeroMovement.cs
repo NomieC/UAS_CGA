@@ -3,13 +3,11 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class HeroMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float sprintSpeed = 7f;
     public float groundCheckDistance = 0.2f;
-
     private Rigidbody rb;
     private bool isGrounded;
     public Camera mainCamera;
+    public CharacterScriptable characterStatus;
 
     void Start()
     {
@@ -30,7 +28,7 @@ public class HeroMovement : MonoBehaviour
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
 
         // Adjust movement speed based on sprint
-        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : moveSpeed;
+        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? characterStatus.SprintSpeed : characterStatus.MoveSpeed;
 
         // Move the character
         MoveCharacter(move, currentSpeed);
