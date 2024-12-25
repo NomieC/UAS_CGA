@@ -10,20 +10,33 @@ public class EnemyStats : MonoBehaviour
     float currentDamage;
     float currentMoveSpeed;
 
-    void Awake(){
+    void Awake()
+    {
         currentHealth = enemyStatus.HealthPoint;
         currentDamage = enemyStatus.Damage;
         currentMoveSpeed = enemyStatus.MoveSpeed;
     }
 
-    public void TakeDamage(float damage){
+    public void TakeDamage(float damage)
+    {
         currentHealth -= damage;
-        if(currentHealth <= 0){
+        if (currentHealth <= 0)
+        {
             Die();
         }
     }
 
-    public void Die(){
+    public void Die()
+    {
         Destroy(gameObject);
+    }
+
+    private void OnCollisionStay(Collision other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            CharacterStatus player = other.gameObject.GetComponent<CharacterStatus>();
+            player.TakeDamage(currentDamage);
+        }
     }
 }
