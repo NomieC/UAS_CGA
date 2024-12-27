@@ -28,9 +28,8 @@ public class EnemySpawner : MonoBehaviour
     [Header("Spawner Settings")]
     float spawnTimer;
     public float waveInterval;
-
-    [Header("Spawner Settings")]
     public List<Transform> spawnPoints;
+    bool waveActive = false;
     Transform player;
     // Start is called before the first frame update
     void Start()
@@ -42,7 +41,7 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (waves[currentWaveCount].spawnCount >= waves[currentWaveCount].waveQuota)
+        if (waves[currentWaveCount].spawnCount >= waves[currentWaveCount].waveQuota && !waveActive)
         {
             StartCoroutine(NextWave());
         }
@@ -58,9 +57,11 @@ public class EnemySpawner : MonoBehaviour
 
 IEnumerator NextWave()
     {
+        waveActive = true;
         yield return new WaitForSeconds(waveInterval);
         if (currentWaveCount < waves.Count - 1)
         {
+            waveActive = false;
             currentWaveCount++;
             CountWaveQuota();
         }

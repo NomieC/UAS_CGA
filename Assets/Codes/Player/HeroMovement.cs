@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -7,12 +9,22 @@ public class HeroMovement : MonoBehaviour
     private Rigidbody rb;
     private bool isGrounded;
     public Camera mainCamera;
-    public CharacterScriptable characterStatus;
+    CharacterStatus player;
+
+    private bool isSprinting;
+    private Coroutine energyDrainCoroutine;
 
     void Start()
     {
+        player = GetComponent<CharacterStatus>();
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true; // Prevent the Rigidbody from rotating
+
+        Light light = GetComponentInChildren<Light>();
+        if (light != null)
+        {
+            light.renderMode = LightRenderMode.ForcePixel;
+        }
     }
 
     void Update()
@@ -27,8 +39,18 @@ public class HeroMovement : MonoBehaviour
         // Create a movement vector
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
 
+        // Sprint logic
+        if (Input.GetKey(KeyCode.LeftShift) && player.currentEnergy >= 10)
+        {
+            StartSprinting();
+        }
+        else
+        {
+            StopSprinting();
+        }
+
         // Adjust movement speed based on sprint
-        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? characterStatus.SprintSpeed : characterStatus.MoveSpeed;
+        float currentSpeed = isSprinting ? player.currentSprintSpeed : player.currentMoveSpeed;
 
         // Move the character
         MoveCharacter(move, currentSpeed);
@@ -41,5 +63,39 @@ public class HeroMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement);
     }
 
+    void StartSprinting()
+    {
+        if (!isSprinting)
+        {
+            isSprinting = true;
+            
+            if (energyDrainCoroutine == null)
+            {
+                energyDrainCoroutine = StartCoroutine(DrainEnergy());
+            }
+        }
+    }
 
+    void StopSprinting()
+    {
+        isSprinting = false;
+        if (energyDrainCoroutine != null)
+        {
+            StopCoroutine(energyDrainCoroutine);
+            energyDrainCoroutine = null;
+        }
+    }
+
+    IEnumerator DrainEnergy()
+    {
+        while (isSprinting && player.currentEnergy >= 10)
+        {
+            player.currentEnergy -= 10;
+            if (player.currentEnergy < 10)
+            {
+                StopSprinting();
+            }
+            yield return new WaitForSeconds(1f); // Drain energy every 1 second
+        }
+    }
 }

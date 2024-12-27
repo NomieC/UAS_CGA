@@ -15,7 +15,7 @@ public class CharacterScriptable : ScriptableObject
     [SerializeField]
     float sprintSpeed;
     public float SprintSpeed {get => sprintSpeed; private set => sprintSpeed = value;}
-    
+
     [SerializeField]
     float healthPoint;
     public float HealthPoint {get => healthPoint; private set => healthPoint = value;}
@@ -27,4 +27,8 @@ public class CharacterScriptable : ScriptableObject
     [SerializeField]
     float projectileSpeed;
     public float ProjectileSpeed {get => projectileSpeed; private set => projectileSpeed = value;}
+
+    [SerializeField]
+    float magnetRange;
+    public float MagnetRange {get => magnetRange; private set => magnetRange = value;}
 }
