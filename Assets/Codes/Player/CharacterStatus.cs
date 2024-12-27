@@ -6,11 +6,12 @@ public class CharacterStatus : MonoBehaviour
 {
     public CharacterScriptable characterStatus;
     //Current status
-    float currentHealth;
-    float currentEnergy;
-    float currentMoveSpeed;
-    float currentSprintSpeed;
-    float currentProjectileSpeed;
+    public float currentHealth;
+    public float currentEnergy;
+    public float currentMoveSpeed;
+    public float currentSprintSpeed;
+    public float currentProjectileSpeed;
+    public float currentMagnetRange;
 
     [Header("Experience System")]
     public int experience = 0;
@@ -40,6 +41,7 @@ public class CharacterStatus : MonoBehaviour
         currentMoveSpeed = characterStatus.MoveSpeed;
         currentSprintSpeed = characterStatus.SprintSpeed;
         currentProjectileSpeed = characterStatus.ProjectileSpeed;
+        currentMagnetRange = characterStatus.MagnetRange;
     }
 
     void start()
@@ -57,6 +59,8 @@ public class CharacterStatus : MonoBehaviour
                 isInvincible = false;
             }
         }
+        HealOverTime();
+        EnergyOverTime();
     }
 
     public void AddExperience(int exp)
@@ -97,5 +101,28 @@ public class CharacterStatus : MonoBehaviour
     {
         // Destroy(gameObject);
         Debug.Log("You died");
+    }
+
+    void HealOverTime()
+    {
+        if (currentHealth < characterStatus.HealthPoint)
+        {
+            currentHealth += 5 * Time.deltaTime;
+            if (currentHealth > characterStatus.HealthPoint)
+            {
+                currentHealth = characterStatus.HealthPoint;
+            }
+        }
+    }
+    void EnergyOverTime()
+    {
+        if (currentEnergy < characterStatus.EnergyPoint)
+        {
+            currentEnergy += 5 * Time.deltaTime;
+            if (currentEnergy > characterStatus.EnergyPoint)
+            {
+                currentEnergy = characterStatus.EnergyPoint;
+            }
+        }
     }
 }

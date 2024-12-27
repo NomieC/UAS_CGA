@@ -27,6 +27,9 @@ public class EnemySpawner : MonoBehaviour
     public int currentWaveCount;
     [Header("Spawner Settings")]
     float spawnTimer;
+    public float waveInterval;
+    public List<Transform> spawnPoints;
+    bool waveActive = false;
     Transform player;
     // Start is called before the first frame update
     void Start()
@@ -38,6 +41,11 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (waves[currentWaveCount].spawnCount >= waves[currentWaveCount].waveQuota && !waveActive)
+        {
+            StartCoroutine(NextWave());
+        }
+
         spawnTimer += Time.deltaTime;
 
         if (spawnTimer >= waves[currentWaveCount].spawnInterval)
@@ -47,6 +55,17 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+IEnumerator NextWave()
+    {
+        waveActive = true;
+        yield return new WaitForSeconds(waveInterval);
+        if (currentWaveCount < waves.Count - 1)
+        {
+            waveActive = false;
+            currentWaveCount++;
+            CountWaveQuota();
+        }
+    }
     void CountWaveQuota()
     {
         int currentWaveQuota = 0;
@@ -58,19 +77,37 @@ public class EnemySpawner : MonoBehaviour
     }
 
     void SpawnEnemy()
+{
+    if (waves[currentWaveCount].spawnCount < waves[currentWaveCount].waveQuota)
     {
-        if (waves[currentWaveCount].spawnCount < waves[currentWaveCount].waveQuota)
+        foreach (var enemies in waves[currentWaveCount].enemies)
         {
-            foreach (var enemies in waves[currentWaveCount].enemies)
+            if (enemies.spawnCount < enemies.enemyCount)
             {
-                if (enemies.spawnCount < enemies.enemyCount)
+                // Calculate random position around the player
+                float randomAngle = Random.Range(0f, 360f);
+                float randomDistance = Random.Range(35f, 45f);  // Adjust distance as needed
+                Vector3 spawnOffset = new Vector3(
+                    Mathf.Cos(randomAngle * Mathf.Deg2Rad) * randomDistance,
+                    0,
+                    Mathf.Sin(randomAngle * Mathf.Deg2Rad) * randomDistance
+                );
+
+                Vector3 spawnPosition = player.position + spawnOffset;
+
+                // Instantiate enemy at the calculated position
+                Instantiate(enemies.enemyPrefab, spawnPosition, Quaternion.identity);
+                
+                enemies.spawnCount++;
+                waves[currentWaveCount].spawnCount++;
+
+                // Break if the wave quota is filled
+                if (waves[currentWaveCount].spawnCount >= waves[currentWaveCount].waveQuota)
                 {
-                    Vector3 spawnPosition = new Vector3(player.transform.position.x + Random.Range(-15f, 15f), player.transform.position.y, player.transform.position.z + Random.Range(-15f, 15f));
-                    Instantiate(enemies.enemyPrefab, spawnPosition, Quaternion.identity);
-                    enemies.spawnCount++;
-                    waves[currentWaveCount].spawnCount++;
+                    break;
                 }
             }
         }
     }
+}
 }
