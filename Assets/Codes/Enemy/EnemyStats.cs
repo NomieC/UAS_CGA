@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     public EnemyScriptable enemyStatus;
+    public CharacterStatus player;
     //Current status
     float currentHealth;
     float currentDamage;
@@ -15,6 +16,13 @@ public class EnemyStats : MonoBehaviour
         currentHealth = enemyStatus.HealthPoint;
         currentDamage = enemyStatus.Damage;
         currentMoveSpeed = enemyStatus.MoveSpeed;
+
+        if (player == null)
+        {
+            player = FindObjectOfType<CharacterStatus>();  // Automatically find player if not assigned
+        }
+
+        ScaleStatsByLevel();
     }
 
     public void TakeDamage(float damage)
@@ -23,6 +31,16 @@ public class EnemyStats : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+        }
+    }
+
+    public void ScaleStatsByLevel()
+    {
+        if (player != null)
+        {
+            currentHealth = enemyStatus.HealthPoint * Mathf.Pow(1.1f, player.level);
+            currentDamage = enemyStatus.Damage * Mathf.Pow(1.1f, player.level);
+            currentMoveSpeed = enemyStatus.MoveSpeed;  // Keep move speed constant or adjust as needed
         }
     }
 

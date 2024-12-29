@@ -18,4 +18,4 @@ MonoBehaviour:
   healthPoint: 100
   energyPoint: 100
   projectileSpeed: 6
-  magnetRange: 2
+  magnetRange: 4
