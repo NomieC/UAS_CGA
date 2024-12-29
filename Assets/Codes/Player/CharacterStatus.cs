@@ -14,9 +14,9 @@ public class CharacterStatus : MonoBehaviour
     public float currentMagnetRange;
 
     [Header("Experience System")]
-    public int experience = 0;
-    public int level = 1;
-    public int maxExperience;
+    public float experience = 0;
+    public float level = 1;
+    public float maxExperience;
 
     [System.Serializable]
     public class LevelRange
@@ -70,6 +70,15 @@ public class CharacterStatus : MonoBehaviour
         {
             level++;
             experience -= maxExperience;
+
+            // Notify all enemies to scale up
+            EnemyStats[] enemies = FindObjectsOfType<EnemyStats>();
+            foreach (EnemyStats enemy in enemies)
+            {
+                enemy.ScaleStatsByLevel();
+            }
+
+            // Increase max exp for next level
             foreach (LevelRange range in levelRanges)
             {
                 if (level >= range.startLevel && level <= range.endLevel)
@@ -118,11 +127,20 @@ public class CharacterStatus : MonoBehaviour
     {
         if (currentEnergy < characterStatus.EnergyPoint)
         {
-            currentEnergy += 5 * Time.deltaTime;
+            currentEnergy += 5*Mathf.Pow(1.1f, level) * Time.deltaTime;
             if (currentEnergy > characterStatus.EnergyPoint)
             {
                 currentEnergy = characterStatus.EnergyPoint;
             }
         }
     }
+
+    public void ScaleStatsByLevel()
+    {
+        currentHealth = characterStatus.HealthPoint * Mathf.Pow(1.25f, level);
+        currentEnergy = characterStatus.EnergyPoint * Mathf.Pow(1.08f, level);
+        currentMagnetRange = characterStatus.MagnetRange * level;
+    }
+    
+
 }
