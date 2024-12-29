@@ -16,20 +16,22 @@ public class ProjectileBehaviour : MonoBehaviour
     protected float currentSpecialCooldown;
     protected float currentPierce;
 
-    void Awake()
-    {
-        currentDamage = weaponStatus.Damage;
-        currentSpeed = weaponStatus.Speed;
-        currentCooldown = weaponStatus.Cooldown;
-        currentSpecialCooldown = weaponStatus.SpecialCooldown;
-        currentPierce = weaponStatus.Pierce;
+    bool isBuffed = false;
 
-         if (player == null)
-        {
-            player = FindObjectOfType<CharacterStatus>();  // Automatically find player if not assigned
-        }
-        ScaleStatsByLevel();
-    }//Awake
+    void Awake()
+{
+    if (player == null)
+    {
+        player = FindObjectOfType<CharacterStatus>();  // Automatically find player if not assigned
+    }
+
+    // Apply player buff to the projectile
+    currentDamage = weaponStatus.Damage * player.damageMultiplier;
+    currentSpeed = weaponStatus.Speed;
+    currentCooldown = weaponStatus.Cooldown;
+    currentSpecialCooldown = weaponStatus.SpecialCooldown;
+    currentPierce = weaponStatus.Pierce;
+}
     protected virtual void Start()
     {
         Destroy(gameObject, destroyBulletTime);
@@ -41,11 +43,14 @@ public class ProjectileBehaviour : MonoBehaviour
         direction = dir;
     }
 
-    protected virtual void OnTriggerEnter(Collider other) {
-        if(other.gameObject.tag == "Enemy"){
+    protected virtual void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
             other.GetComponent<EnemyStats>().TakeDamage(currentDamage);
             currentPierce--;
-            if(currentPierce <= 0){
+            if (currentPierce <= 0)
+            {
                 Destroy(gameObject);
             }
         }
@@ -55,8 +60,26 @@ public class ProjectileBehaviour : MonoBehaviour
     {
         if (player != null)
         {
-            currentCooldown = 0.1f + weaponStatus.Cooldown * Mathf.Pow(0.9f, player.level);
+            currentCooldown = 0.1f + weaponStatus.Cooldown * Mathf.Pow(0.95f, player.level);
         }
+    }
+
+    public void DamageBuff(float duration)
+    {
+        if (!isBuffed)
+        {
+            isBuffed = true;
+            currentDamage = weaponStatus.Damage * 2;  // Apply damage buff
+            StartCoroutine(DamageBuffTimer(duration));
+        }
+    }
+
+    // Coroutine to revert damage after the buff duration
+    IEnumerator DamageBuffTimer(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        currentDamage = weaponStatus.Damage;
+        isBuffed = false;  // Allow buff to be reapplied
     }
 
 }

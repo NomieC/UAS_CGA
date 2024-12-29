@@ -5,13 +5,18 @@ using UnityEngine;
 public class CharacterStatus : MonoBehaviour
 {
     public CharacterScriptable characterStatus;
-    //Current status
+
+    // Current status
     public float currentHealth;
+    public float maxHealth;
     public float currentEnergy;
     public float currentMoveSpeed;
     public float currentSprintSpeed;
     public float currentProjectileSpeed;
     public float currentMagnetRange;
+    public bool isDamageBuffed = false;
+    private Coroutine buffCoroutine;
+    public float damageMultiplier = 1f;
 
     [Header("Experience System")]
     public float experience = 0;
@@ -33,10 +38,14 @@ public class CharacterStatus : MonoBehaviour
     public float invincibilityTime;
     public bool isInvincible;
     public float invincibilityTimer;
+    
 
+    // Initialization
     void Awake()
     {
-        currentHealth = characterStatus.HealthPoint;
+        // Initialize stats based on CharacterScriptable values
+        maxHealth = characterStatus.HealthPoint * Mathf.Pow(1.25f, level);  // Initialize max health with scaling
+        currentHealth = maxHealth;  // Set current health to max at start
         currentEnergy = characterStatus.EnergyPoint;
         currentMoveSpeed = characterStatus.MoveSpeed;
         currentSprintSpeed = characterStatus.SprintSpeed;
@@ -44,13 +53,15 @@ public class CharacterStatus : MonoBehaviour
         currentMagnetRange = characterStatus.MagnetRange;
     }
 
-    void start()
+    void Start()
     {
+        // Set initial experience required for level up
         maxExperience = levelRanges[0].maxExperienceIncrease;
     }
 
     void Update()
     {
+        // Handle invincibility frames countdown
         if (isInvincible)
         {
             invincibilityTimer -= Time.deltaTime;
@@ -59,26 +70,29 @@ public class CharacterStatus : MonoBehaviour
                 isInvincible = false;
             }
         }
+
         HealOverTime();
         EnergyOverTime();
     }
 
+    // Add experience and handle level up
     public void AddExperience(int exp)
     {
         experience += exp;
-        if (experience >= maxExperience)
+
+        while (experience >= maxExperience)
         {
             level++;
             experience -= maxExperience;
 
-            // Notify all enemies to scale up
+            // Notify all enemies to scale up based on new level
             EnemyStats[] enemies = FindObjectsOfType<EnemyStats>();
             foreach (EnemyStats enemy in enemies)
             {
                 enemy.ScaleStatsByLevel();
             }
 
-            // Increase max exp for next level
+            // Increase max experience for next level
             foreach (LevelRange range in levelRanges)
             {
                 if (level >= range.startLevel && level <= range.endLevel)
@@ -87,9 +101,13 @@ public class CharacterStatus : MonoBehaviour
                     break;
                 }
             }
+
+            // Scale player stats on level up
+            ScaleStatsByLevel();
         }
     }
 
+    // Take damage with invincibility and death checks
     public void TakeDamage(float damage)
     {
         if (!isInvincible)
@@ -106,28 +124,32 @@ public class CharacterStatus : MonoBehaviour
         }
     }
 
+    // Player death logic
     public void Die()
     {
-        // Destroy(gameObject);
         Debug.Log("You died");
+        // Implement player respawn or restart logic here
     }
 
+    // Heal health over time
     void HealOverTime()
     {
-        if (currentHealth < characterStatus.HealthPoint)
+        if (currentHealth < maxHealth)
         {
-            currentHealth += 5 * Time.deltaTime;
-            if (currentHealth > characterStatus.HealthPoint)
+            currentHealth += 5 * Time.deltaTime;  // Heal 5 HP per second
+            if (currentHealth > maxHealth)
             {
-                currentHealth = characterStatus.HealthPoint;
+                currentHealth = maxHealth;
             }
         }
     }
+
+    // Regenerate energy over time with scaling by level
     void EnergyOverTime()
     {
         if (currentEnergy < characterStatus.EnergyPoint)
         {
-            currentEnergy += 5*Mathf.Pow(1.1f, level) * Time.deltaTime;
+            currentEnergy += 5 * Mathf.Pow(1.1f, level) * Time.deltaTime;
             if (currentEnergy > characterStatus.EnergyPoint)
             {
                 currentEnergy = characterStatus.EnergyPoint;
@@ -135,12 +157,42 @@ public class CharacterStatus : MonoBehaviour
         }
     }
 
+    // Scale player stats when leveling up
     public void ScaleStatsByLevel()
     {
-        currentHealth = characterStatus.HealthPoint * Mathf.Pow(1.25f, level);
-        currentEnergy = characterStatus.EnergyPoint * Mathf.Pow(1.08f, level);
-        currentMagnetRange = characterStatus.MagnetRange * level;
-    }
-    
+        // Preserve the current health percentage during scaling
+        float healthPercentage = currentHealth / maxHealth;
 
+        // Scale max health, energy, and other stats by level
+        maxHealth = characterStatus.HealthPoint * Mathf.Pow(1.25f, level);
+        currentHealth = maxHealth * healthPercentage;  // Keep current health proportional to the new max
+        currentEnergy = characterStatus.EnergyPoint * Mathf.Pow(1.05f, level);
+    }
+
+    // Heal instantly with health pickup
+    public void HP_Regen()
+    {
+        currentHealth += maxHealth * 1f;  // Restore 25% of base health
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+    }
+    public void ApplyDamageBuff(float duration)
+    {
+        if (buffCoroutine != null)
+        {
+            StopCoroutine(buffCoroutine);
+        }
+        buffCoroutine = StartCoroutine(DamageBuffTimer(duration));
+    }
+
+    IEnumerator DamageBuffTimer(float duration)
+    {
+        isDamageBuffed = true;
+        damageMultiplier = 2f;  // Double damage
+        yield return new WaitForSeconds(duration);
+        isDamageBuffed = false;
+        damageMultiplier = 1f;  // Reset to normal damage
+    }
 }
