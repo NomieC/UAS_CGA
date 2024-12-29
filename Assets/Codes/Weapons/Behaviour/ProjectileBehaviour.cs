@@ -7,6 +7,7 @@ public class ProjectileBehaviour : MonoBehaviour
     protected Vector3 direction;
     public WeaponScriptable weaponStatus;
     public float destroyBulletTime;
+    public CharacterStatus player;
 
     //current status
     protected float currentDamage;
@@ -22,6 +23,12 @@ public class ProjectileBehaviour : MonoBehaviour
         currentCooldown = weaponStatus.Cooldown;
         currentSpecialCooldown = weaponStatus.SpecialCooldown;
         currentPierce = weaponStatus.Pierce;
+
+         if (player == null)
+        {
+            player = FindObjectOfType<CharacterStatus>();  // Automatically find player if not assigned
+        }
+        ScaleStatsByLevel();
     }//Awake
     protected virtual void Start()
     {
@@ -43,4 +50,13 @@ public class ProjectileBehaviour : MonoBehaviour
             }
         }
     }
+
+    public void ScaleStatsByLevel()
+    {
+        if (player != null)
+        {
+            currentPierce = weaponStatus.Pierce + (player.level/2);
+        }
+    }
+
 }
