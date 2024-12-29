@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: kiplihijau(weapon)
   m_EditorClassIdentifier: 
   prefab: {fileID: 967660045436454333, guid: 8374d0528a75b432c82d9845fa470fe8, type: 3}
-  damage: 30
+  damage: 60
   speed: 10
   cooldown: 1
   specialCooldown: 4
-  pierce: 1
+  pierce: 3
