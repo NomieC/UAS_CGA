@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HP_RegenDrop : Pickup, ICollectible
 {
-    public float lifetime = 40f;
+    public float lifetime = 30f;
      void Start()
     {
         Light light = GetComponentInChildren<Light>();

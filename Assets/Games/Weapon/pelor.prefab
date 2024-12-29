@@ -122,6 +122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponStatus: {fileID: 11400000, guid: a54b80379aa944a3d9bfdb0923cdff1d, type: 2}
   destroyBulletTime: 5
+  player: {fileID: 0}
+  hitParticlePrefab: {fileID: 6237553109302029157, guid: 028315ff90f3b77478f6282592e23c74, type: 3}
 --- !u!108 &-1597827122278958238
 Light:
   m_ObjectHideFlags: 0

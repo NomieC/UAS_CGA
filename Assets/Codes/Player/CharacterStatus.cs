@@ -179,20 +179,20 @@ public class CharacterStatus : MonoBehaviour
         }
     }
     public void ApplyDamageBuff(float duration)
+{
+    if (buffCoroutine != null)
     {
-        if (buffCoroutine != null)
-        {
-            StopCoroutine(buffCoroutine);
-        }
-        buffCoroutine = StartCoroutine(DamageBuffTimer(duration));
+        StopCoroutine(buffCoroutine);  // Stop any active buff coroutine
     }
+    buffCoroutine = StartCoroutine(DamageBuffTimer(duration));
+}
 
-    IEnumerator DamageBuffTimer(float duration)
-    {
-        isDamageBuffed = true;
-        damageMultiplier = 2f;  // Double damage
-        yield return new WaitForSeconds(duration);
-        isDamageBuffed = false;
-        damageMultiplier = 1f;  // Reset to normal damage
-    }
+IEnumerator DamageBuffTimer(float duration)
+{
+    isDamageBuffed = true;
+    damageMultiplier = 2f;  // Apply double damage
+    yield return new WaitForSeconds(duration);
+    isDamageBuffed = false;
+    damageMultiplier = 1f;  // Reset to normal damage
+}
 }
