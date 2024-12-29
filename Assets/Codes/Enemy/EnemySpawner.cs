@@ -41,7 +41,7 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (waves[currentWaveCount].spawnCount >= waves[currentWaveCount].waveQuota && !waveActive)
+        if (waves[currentWaveCount].spawnCount >= waves[currentWaveCount].waveQuota && !waveActive && GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
         {
             StartCoroutine(NextWave());
         }
