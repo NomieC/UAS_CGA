@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 69416144242187919}
   - component: {fileID: 8644806242909859079}
   - component: {fileID: 4536622351516752327}
+  - component: {fileID: 3332007455143539298}
   m_Layer: 0
   m_Name: HP_Regen
   m_TagString: Untagged
@@ -251,6 +252,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3332007455143539298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8336288784156477962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a83f42690b4449448a5ea14cae601ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 40
 --- !u!1001 &4193658896104232727
 PrefabInstance:
   m_ObjectHideFlags: 0
