@@ -5,7 +5,7 @@ using UnityEngine;
 public class ExperienceDrops : Pickup, ICollectible
 {
     public int experienceValue;
-    public float lifetime = 20f;
+    public float lifetime = 40f;
     void Start()
     {
         Light light = GetComponentInChildren<Light>();
@@ -24,17 +24,19 @@ public class ExperienceDrops : Pickup, ICollectible
 
     IEnumerator FlashBeforeDestruction()
     {
-        yield return new WaitForSeconds(lifetime - 10);  // Start flashing 5 sec before destruction
+        yield return new WaitForSeconds(lifetime - 5);  
 
         Renderer renderer = GetComponent<Renderer>();
-        float flashTime = 0.5f;
-        while (flashTime > 0)
+        float flashDuration = 5f;  
+        float flashInterval = 0.2f;
+
+        while (flashDuration > 0)
         {
-            renderer.enabled = !renderer.enabled;
-            yield return new WaitForSeconds(0.2f);
-            flashTime -= 0.2f;
+            renderer.enabled = !renderer.enabled;  
+            yield return new WaitForSeconds(flashInterval);
+            flashDuration -= flashInterval;
         }
 
-        Destroy(gameObject);
+        renderer.enabled = true;  
     }
 }

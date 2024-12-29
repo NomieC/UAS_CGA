@@ -55,7 +55,7 @@ public class ProjectileBehaviour : MonoBehaviour
     {
         if (player != null)
         {
-            currentPierce = weaponStatus.Pierce + (player.level/2);
+            currentCooldown = 0.1f + weaponStatus.Cooldown * Mathf.Pow(0.9f, player.level);
         }
     }
 
