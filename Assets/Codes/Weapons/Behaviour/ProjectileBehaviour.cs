@@ -9,8 +9,10 @@ public class ProjectileBehaviour : MonoBehaviour
     public float destroyBulletTime;
     public CharacterStatus player;
 
-    //current status
-    protected float currentDamage;
+    public GameObject hitParticlePrefab;  // Reference to hit particle prefab
+
+    // Current status
+    public float currentDamage;
     protected float currentSpeed;
     protected float currentCooldown;
     protected float currentSpecialCooldown;
@@ -19,35 +21,35 @@ public class ProjectileBehaviour : MonoBehaviour
     bool isBuffed = false;
 
     void Awake()
-{
-    if (player == null)
     {
-        player = FindObjectOfType<CharacterStatus>();  // Automatically find player if not assigned
+        if (player == null)
+        {
+            player = FindObjectOfType<CharacterStatus>();  // Automatically find player if not assigned
+        }
+
+        // Apply player's damage multiplier to projectile
+        currentDamage = weaponStatus.Damage * player.damageMultiplier;
+        currentSpeed = weaponStatus.Speed;
+        currentCooldown = weaponStatus.Cooldown;
+        currentSpecialCooldown = weaponStatus.SpecialCooldown;
+        currentPierce = weaponStatus.Pierce;
     }
 
-    // Apply player buff to the projectile
-    currentDamage = weaponStatus.Damage * player.damageMultiplier;
-    currentSpeed = weaponStatus.Speed;
-    currentCooldown = weaponStatus.Cooldown;
-    currentSpecialCooldown = weaponStatus.SpecialCooldown;
-    currentPierce = weaponStatus.Pierce;
-}
     protected virtual void Start()
     {
         Destroy(gameObject, destroyBulletTime);
     }
 
-    // Update is called once per frame
-    public void DirectionChecker(Vector3 dir)
-    {
-        direction = dir;
-    }
-
     protected virtual void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.CompareTag("Enemy"))
         {
+            // Apply damage to the enemy
             other.GetComponent<EnemyStats>().TakeDamage(currentDamage);
+
+            // Spawn hit particle at collision point
+            SpawnHitParticle(transform.position);
+
             currentPierce--;
             if (currentPierce <= 0)
             {
@@ -56,11 +58,21 @@ public class ProjectileBehaviour : MonoBehaviour
         }
     }
 
+    void SpawnHitParticle(Vector3 hitPosition)
+    {
+        if (hitParticlePrefab != null)
+        {
+            GameObject particleInstance = Instantiate(hitParticlePrefab, hitPosition, Quaternion.identity);
+            Destroy(particleInstance, 2f);  // Destroy particle after 2 seconds
+        }
+    }
+
     public void ScaleStatsByLevel()
     {
         if (player != null)
         {
-            currentCooldown = 0.1f + weaponStatus.Cooldown * Mathf.Pow(0.95f, player.level);
+            currentPierce = weaponStatus.Pierce + (player.level/2);
+            currentCooldown = 0.1f + weaponStatus.Cooldown * Mathf.Pow(0.5f, player.level);
         }
     }
 
@@ -69,17 +81,15 @@ public class ProjectileBehaviour : MonoBehaviour
         if (!isBuffed)
         {
             isBuffed = true;
-            currentDamage = weaponStatus.Damage * 2;  // Apply damage buff
+            currentDamage = weaponStatus.Damage * 2;
             StartCoroutine(DamageBuffTimer(duration));
         }
     }
 
-    // Coroutine to revert damage after the buff duration
     IEnumerator DamageBuffTimer(float duration)
     {
         yield return new WaitForSeconds(duration);
         currentDamage = weaponStatus.Damage;
-        isBuffed = false;  // Allow buff to be reapplied
+        isBuffed = false;
     }
-
 }

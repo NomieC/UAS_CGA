@@ -13,6 +13,8 @@ public class PlayerCollector : MonoBehaviour
 
     void Start()
     {
+
+        
         player = FindObjectOfType<CharacterStatus>();
         playerCollector = GetComponent<SphereCollider>();
         playerCollector.isTrigger = true;  // Ensure the collider acts as a trigger

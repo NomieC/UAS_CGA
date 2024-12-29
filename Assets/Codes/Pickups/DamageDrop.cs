@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class DamageDrop : Pickup, ICollectible
 {
-    public float lifetime = 40f;
+    public float lifetime = 30f;
 
     void Start()
     {
@@ -19,24 +19,29 @@ public class DamageDrop : Pickup, ICollectible
     public void Collect()
     {
         CharacterStatus player = FindObjectOfType<CharacterStatus>();
-        player.ApplyDamageBuff(10f);  // Buff the player for 10 seconds
+        player.ApplyDamageBuff(10f);  // Apply damage buff for 10 seconds
+        ProjectileBehaviour[] projectiles = FindObjectsOfType<ProjectileBehaviour>();
+        foreach (ProjectileBehaviour projectile in projectiles)
+        {
+            projectile.currentDamage = projectile.weaponStatus.Damage * player.damageMultiplier;
+        }
     }
 
     IEnumerator FlashBeforeDestruction()
     {
-        yield return new WaitForSeconds(lifetime - 5);  
+        yield return new WaitForSeconds(lifetime - 5);
 
         Renderer renderer = GetComponent<Renderer>();
-        float flashDuration = 5f;  
+        float flashDuration = 5f;
         float flashInterval = 0.2f;
 
         while (flashDuration > 0)
         {
-            renderer.enabled = !renderer.enabled;  
+            renderer.enabled = !renderer.enabled;
             yield return new WaitForSeconds(flashInterval);
             flashDuration -= flashInterval;
         }
 
-        renderer.enabled = true;  
+        renderer.enabled = true;
     }
 }
