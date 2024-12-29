@@ -243,7 +243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5278d163aa88144199f1df9973ebc135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  experienceValue: 100
+  experienceValue: 20
+  lifetime: 40
 --- !u!65 &4536622351516752327
 BoxCollider:
   m_ObjectHideFlags: 0
