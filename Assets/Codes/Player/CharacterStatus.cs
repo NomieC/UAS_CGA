@@ -44,7 +44,7 @@ public class CharacterStatus : MonoBehaviour
     void Awake()
     {
         // Initialize stats based on CharacterScriptable values
-        maxHealth = characterStatus.HealthPoint * Mathf.Pow(1.25f, level);  // Initialize max health with scaling
+        maxHealth = characterStatus.HealthPoint;  // Initialize max health with scaling
         currentHealth = maxHealth;  // Set current health to max at start
         currentEnergy = characterStatus.EnergyPoint;
         currentMoveSpeed = characterStatus.MoveSpeed;
@@ -164,9 +164,9 @@ public class CharacterStatus : MonoBehaviour
         float healthPercentage = currentHealth / maxHealth;
 
         // Scale max health, energy, and other stats by level
-        maxHealth = characterStatus.HealthPoint * Mathf.Pow(1.25f, level);
+        maxHealth = characterStatus.HealthPoint * Mathf.Pow(1.2f, level);
         currentHealth = maxHealth * healthPercentage;  // Keep current health proportional to the new max
-        currentEnergy = characterStatus.EnergyPoint * Mathf.Pow(1.05f, level);
+        currentEnergy = characterStatus.EnergyPoint * Mathf.Pow(1.1f, level);
     }
 
     // Heal instantly with health pickup
@@ -190,7 +190,7 @@ public class CharacterStatus : MonoBehaviour
 IEnumerator DamageBuffTimer(float duration)
 {
     isDamageBuffed = true;
-    damageMultiplier = 2f;  // Apply double damage
+    damageMultiplier = 3f;  // Apply double damage
     yield return new WaitForSeconds(duration);
     isDamageBuffed = false;
     damageMultiplier = 1f;  // Reset to normal damage
