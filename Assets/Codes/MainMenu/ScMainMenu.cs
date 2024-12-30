@@ -8,4 +8,10 @@ public class ScMainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1);
     }
+
+    public void QuitGame()
+    {
+        // Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
 }
