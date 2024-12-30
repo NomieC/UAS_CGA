@@ -98,4 +98,5 @@ public class HeroMovement : MonoBehaviour
             yield return new WaitForSeconds(1f); // Drain energy every 1 second
         }
     }
+
 }

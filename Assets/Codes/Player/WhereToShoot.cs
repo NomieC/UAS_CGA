@@ -39,5 +39,8 @@ public class WhereToShoot : MonoBehaviour
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
             }
         }
+
+        
     }
+
 }
