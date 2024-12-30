@@ -64,8 +64,134 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tyrael
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 764f72d3f6f38db478a2318c368d7c6f, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 764f72d3f6f38db478a2318c368d7c6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -173816370122362065}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 764f72d3f6f38db478a2318c368d7c6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3945867855460232518}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 764f72d3f6f38db478a2318c368d7c6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6570487340293203173}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 764f72d3f6f38db478a2318c368d7c6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8937836072910567623}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 764f72d3f6f38db478a2318c368d7c6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4726298478372605910}
   m_SourcePrefab: {fileID: 100100000, guid: 764f72d3f6f38db478a2318c368d7c6f, type: 3}
+--- !u!1 &2027113384951635185 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 764f72d3f6f38db478a2318c368d7c6f, type: 3}
+  m_PrefabInstance: {fileID: 1216157939278438816}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &-173816370122362065
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027113384951635185}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &-3945867855460232518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027113384951635185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faf7873f38c341669fef47d2c75240d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyStatus: {fileID: 11400000, guid: 46523c5a7e3ac4ea2aec767074d4004d, type: 2}
+--- !u!114 &6570487340293203173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027113384951635185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a4af8a57f24424f9e2a60d4a843afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyStatus: {fileID: 11400000, guid: 46523c5a7e3ac4ea2aec767074d4004d, type: 2}
+  player: {fileID: 0}
+--- !u!114 &-8937836072910567623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027113384951635185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9030aa65201d6431883861f43daaf08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: small EXP
+    itemPrefab: {fileID: 8336288784156477962, guid: c570f06612f534359bb260de0e4e9550, type: 3}
+    dropRate: 100
+  - name: Medium EXP
+    itemPrefab: {fileID: 8336288784156477962, guid: 68b221c9c27f64e5f8a6d66997c3ebed, type: 3}
+    dropRate: 60
+  - name: HP_Regen
+    itemPrefab: {fileID: 8336288784156477962, guid: 14fd3484f29754533adc868a51e32217, type: 3}
+    dropRate: 20
+  - name: DMG_Up
+    itemPrefab: {fileID: 8336288784156477962, guid: 11544441ac78646dba2ed5db68b73729, type: 3}
+    dropRate: 20
+--- !u!136 &4726298478372605910
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027113384951635185}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.3262224
+  m_Height: 6.9372344
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.7051256, z: 0.5992079}
