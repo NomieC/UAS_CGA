@@ -335,10 +335,10 @@ MonoBehaviour:
     dropRate: 60
   - name: HP_Regen
     itemPrefab: {fileID: 8336288784156477962, guid: 14fd3484f29754533adc868a51e32217, type: 3}
-    dropRate: 20
+    dropRate: 5
   - name: DMG_Up
     itemPrefab: {fileID: 8336288784156477962, guid: 11544441ac78646dba2ed5db68b73729, type: 3}
-    dropRate: 20
+    dropRate: 5
 --- !u!136 &488981385788042262
 CapsuleCollider:
   m_ObjectHideFlags: 0

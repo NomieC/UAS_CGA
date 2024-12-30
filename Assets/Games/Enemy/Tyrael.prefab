@@ -42,11 +42,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 764f72d3f6f38db478a2318c368d7c6f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 764f72d3f6f38db478a2318c368d7c6f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 764f72d3f6f38db478a2318c368d7c6f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7faf7873f38c341669fef47d2c75240d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStatus: {fileID: 11400000, guid: 46523c5a7e3ac4ea2aec767074d4004d, type: 2}
+  enemyStatus: {fileID: 11400000, guid: 6bb31f91d7a3c6346b2af9ffaeb881fe, type: 2}
 --- !u!114 &6570487340293203173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a4af8a57f24424f9e2a60d4a843afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStatus: {fileID: 11400000, guid: 46523c5a7e3ac4ea2aec767074d4004d, type: 2}
+  enemyStatus: {fileID: 11400000, guid: 6bb31f91d7a3c6346b2af9ffaeb881fe, type: 2}
   player: {fileID: 0}
 --- !u!114 &-8937836072910567623
 MonoBehaviour:
@@ -162,16 +162,16 @@ MonoBehaviour:
   drops:
   - name: small EXP
     itemPrefab: {fileID: 8336288784156477962, guid: c570f06612f534359bb260de0e4e9550, type: 3}
-    dropRate: 100
+    dropRate: 0
   - name: Medium EXP
     itemPrefab: {fileID: 8336288784156477962, guid: 68b221c9c27f64e5f8a6d66997c3ebed, type: 3}
-    dropRate: 60
+    dropRate: 100
   - name: HP_Regen
     itemPrefab: {fileID: 8336288784156477962, guid: 14fd3484f29754533adc868a51e32217, type: 3}
-    dropRate: 20
+    dropRate: 10
   - name: DMG_Up
     itemPrefab: {fileID: 8336288784156477962, guid: 11544441ac78646dba2ed5db68b73729, type: 3}
-    dropRate: 20
+    dropRate: 40
 --- !u!136 &4726298478372605910
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -191,7 +191,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.3262224
-  m_Height: 6.9372344
+  m_Radius: 0.6059087
+  m_Height: 2.5501542
   m_Direction: 1
-  m_Center: {x: 0, y: 1.7051256, z: 0.5992079}
+  m_Center: {x: 0, y: 0.04688899, z: -0.043640137}
