@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterStatus : MonoBehaviour
 {
     public CharacterScriptable characterStatus;
+    public Image healthFill;
 
     // Current status
     public float currentHealth;
@@ -51,6 +53,8 @@ public class CharacterStatus : MonoBehaviour
         currentSprintSpeed = characterStatus.SprintSpeed;
         currentProjectileSpeed = characterStatus.ProjectileSpeed;
         currentMagnetRange = characterStatus.MagnetRange;
+
+        UpdateHealthBar();
     }
 
     void Start()
@@ -114,6 +118,8 @@ public class CharacterStatus : MonoBehaviour
         {
             currentHealth -= damage;
 
+            UpdateHealthBar();
+
             invincibilityTimer = invincibilityTime;
             isInvincible = true;
 
@@ -141,7 +147,10 @@ public class CharacterStatus : MonoBehaviour
             {
                 currentHealth = maxHealth;
             }
+
         }
+
+        UpdateHealthBar();
     }
 
     // Regenerate energy over time with scaling by level
@@ -177,22 +186,50 @@ public class CharacterStatus : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+
+        UpdateHealthBar();
     }
     public void ApplyDamageBuff(float duration)
-{
-    if (buffCoroutine != null)
     {
-        StopCoroutine(buffCoroutine);  // Stop any active buff coroutine
+        if (buffCoroutine != null)
+        {
+            StopCoroutine(buffCoroutine);  // Stop any active buff coroutine
+        }
+        buffCoroutine = StartCoroutine(DamageBuffTimer(duration));
     }
-    buffCoroutine = StartCoroutine(DamageBuffTimer(duration));
-}
 
-IEnumerator DamageBuffTimer(float duration)
-{
-    isDamageBuffed = true;
-    damageMultiplier = 3f;  // Apply double damage
-    yield return new WaitForSeconds(duration);
-    isDamageBuffed = false;
-    damageMultiplier = 1f;  // Reset to normal damage
-}
+    IEnumerator DamageBuffTimer(float duration)
+    {
+        isDamageBuffed = true;
+        damageMultiplier = 3f;  // Apply double damage
+        yield return new WaitForSeconds(duration);
+        isDamageBuffed = false;
+        damageMultiplier = 1f;  // Reset to normal damage
+    }
+
+    private void UpdateHealthBar()
+    {
+        if (healthFill != null)
+        {
+            float targetFill = currentHealth / maxHealth;
+            StartCoroutine(SmoothHealthBar(targetFill));
+        }
+    }
+
+    IEnumerator SmoothHealthBar(float targetFill)
+    {
+        float currentFill = healthFill.fillAmount;
+        float elapsedTime = 0f;
+        float duration = 0.3f;  // Adjust for faster or slower animations
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            healthFill.fillAmount = Mathf.Lerp(currentFill, targetFill, elapsedTime / duration);
+            yield return null;
+        }
+
+        healthFill.fillAmount = targetFill;  // Ensure it lands exactly at target
+    }
+
 }
