@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterStatus : MonoBehaviour
 {
     public CharacterScriptable characterStatus;
+    public Image healthFill;
+    public Image energyFill;
 
     // Current status
     public float currentHealth;
     public float maxHealth;
+    private Coroutine currentHealthBarCoroutine;
     public float currentEnergy;
+    public float maxEnergy;
+    private Coroutine currentEnergyBarCoroutine;
     public float currentMoveSpeed;
     public float currentSprintSpeed;
     public float currentProjectileSpeed;
@@ -41,21 +47,36 @@ public class CharacterStatus : MonoBehaviour
     public float invincibilityTime;
     public bool isInvincible;
     public float invincibilityTimer;
+
+    [Header("Energy Regeneration")]
+    public float energyRegenCooldown = 2f;  // Cooldown after sprint stops
+    public float energyRegenTimer = 0f;
+    public bool isSprinting = false;
     
 
     // Initialization
     void Awake()
     {
         // Initialize stats based on CharacterScriptable values
-        maxHealth = characterStatus.HealthPoint;  // Initialize max health with scaling
-        currentHealth = maxHealth;  // Set current health to max at start
-        currentEnergy = characterStatus.EnergyPoint;
+        maxHealth = characterStatus.HealthPoint;
+        currentHealth = maxHealth;
+
+        // Initialize energy
+        maxEnergy = characterStatus.EnergyPoint;
+        currentEnergy = maxEnergy;
+
         currentMoveSpeed = characterStatus.MoveSpeed;
         currentSprintSpeed = characterStatus.SprintSpeed;
         currentProjectileSpeed = characterStatus.ProjectileSpeed;
         currentMagnetRange = characterStatus.MagnetRange;
+
         // healthBar = GetComponentInChildren<HealthBarPlayer>();
         healthBarUI = GetComponentInChildren<HealthBarPlayerUI>();
+
+
+        UpdateHealthBar();
+        UpdateEnergyBar();
+
     }
 
     void Start()
@@ -78,8 +99,22 @@ public class CharacterStatus : MonoBehaviour
             }
         }
 
+        if (!isSprinting)
+        {
+            if (energyRegenTimer > 0)
+            {
+                energyRegenTimer -= Time.deltaTime;  // Countdown cooldown
+            }
+            else
+            {
+                EnergyOverTime();  // Regen only after cooldown
+            }
+        }
+
         HealOverTime();
-        EnergyOverTime();
+
+        UpdateHealthBar();
+        UpdateEnergyBar();
     }
 
     // Add experience and handle level up
@@ -120,8 +155,12 @@ public class CharacterStatus : MonoBehaviour
         if (!isInvincible)
         {
             currentHealth -= damage;
+
             // healthBar.UpdateHealthBar(currentHealth, maxHealth);
             healthBarUI.UpdateHealthBar(currentHealth, maxHealth);
+
+            UpdateHealthBar();
+
             invincibilityTimer = invincibilityTime;
             isInvincible = true;
 
@@ -149,7 +188,10 @@ public class CharacterStatus : MonoBehaviour
             {
                 currentHealth = maxHealth;
             }
+
         }
+
+        UpdateHealthBar();
     }
 
     // Regenerate energy over time with scaling by level
@@ -168,13 +210,19 @@ public class CharacterStatus : MonoBehaviour
     // Scale player stats when leveling up
     public void ScaleStatsByLevel()
     {
-        // Preserve the current health percentage during scaling
+        // Preserve the current health and energy percentage during scaling
         float healthPercentage = currentHealth / maxHealth;
+        float energyPercentage = currentEnergy / maxEnergy;
 
-        // Scale max health, energy, and other stats by level
+        // Scale max health and energy by level
         maxHealth = characterStatus.HealthPoint * Mathf.Pow(1.2f, level);
-        currentHealth = maxHealth * healthPercentage;  // Keep current health proportional to the new max
-        currentEnergy = characterStatus.EnergyPoint * Mathf.Pow(1.1f, level);
+        maxEnergy = characterStatus.EnergyPoint * Mathf.Pow(1.1f, level);
+
+        currentHealth = maxHealth * healthPercentage;  // Maintain proportional health
+        currentEnergy = maxEnergy * energyPercentage;  // Maintain proportional energy
+
+        UpdateHealthBar();
+        UpdateEnergyBar();
     }
 
     // Heal instantly with health pickup
@@ -185,22 +233,75 @@ public class CharacterStatus : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+
+        UpdateHealthBar();
     }
     public void ApplyDamageBuff(float duration)
-{
-    if (buffCoroutine != null)
     {
-        StopCoroutine(buffCoroutine);  // Stop any active buff coroutine
+        if (buffCoroutine != null)
+        {
+            StopCoroutine(buffCoroutine);  // Stop any active buff coroutine
+        }
+        buffCoroutine = StartCoroutine(DamageBuffTimer(duration));
     }
-    buffCoroutine = StartCoroutine(DamageBuffTimer(duration));
-}
 
-IEnumerator DamageBuffTimer(float duration)
-{
-    isDamageBuffed = true;
-    damageMultiplier = 3f;  // Apply double damage
-    yield return new WaitForSeconds(duration);
-    isDamageBuffed = false;
-    damageMultiplier = 1f;  // Reset to normal damage
-}
+    IEnumerator DamageBuffTimer(float duration)
+    {
+        isDamageBuffed = true;
+        damageMultiplier = 3f;  // Apply double damage
+        yield return new WaitForSeconds(duration);
+        isDamageBuffed = false;
+        damageMultiplier = 1f;  // Reset to normal damage
+    }
+
+    private void UpdateHealthBar()
+    {
+        UpdateBar(healthFill, currentHealth, maxHealth, ref currentHealthBarCoroutine);
+    }
+
+    private void UpdateEnergyBar()
+    {
+        UpdateBar(energyFill, currentEnergy, maxEnergy, ref currentEnergyBarCoroutine);
+    }
+
+    // Generic method to update any bar (health, energy)
+   private void UpdateBar(Image barFill, float currentValue, float maxValue, ref Coroutine currentCoroutine)
+    {
+        if (barFill != null)
+        {
+            float percentage = currentValue / maxValue;
+            float fullWidth = barFill.transform.parent.GetComponent<RectTransform>().rect.width;
+            float targetWidth = fullWidth * percentage;
+
+            // Stop the previous coroutine for this bar, if any
+            if (currentCoroutine != null)
+            {
+                StopCoroutine(currentCoroutine);
+            }
+
+            // Start a new smooth transition coroutine
+            currentCoroutine = StartCoroutine(SmoothBarTransition(barFill, targetWidth));
+        }
+    }
+
+    // Coroutine to smoothly transition the bar
+    IEnumerator SmoothBarTransition(Image barFill, float targetWidth)
+    {
+        float currentWidth = barFill.rectTransform.rect.width;
+        float elapsedTime = 0f;
+        float duration = 0.3f; // Adjust this for faster/slower transitions
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float newWidth = Mathf.Lerp(currentWidth, targetWidth, elapsedTime / duration);
+            barFill.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, newWidth);
+            yield return null;
+        }
+
+        // Ensure it lands exactly at the target width
+        barFill.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, targetWidth);
+    }
+
+
 }
