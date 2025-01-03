@@ -11,11 +11,16 @@ public class EnemyStats : MonoBehaviour
     float currentDamage;
     float currentMoveSpeed;
 
+    [SerializeField] HealthBarEnemy healthBar;
+    AudioManager audioManager;
+
     void Awake()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         currentHealth = enemyStatus.HealthPoint;
         currentDamage = enemyStatus.Damage;
         currentMoveSpeed = enemyStatus.MoveSpeed;
+        healthBar = GetComponentInChildren<HealthBarEnemy>();
 
         if (player == null)
         {
@@ -25,9 +30,15 @@ public class EnemyStats : MonoBehaviour
         ScaleStatsByLevel();
     }
 
+    void Start()
+    {
+        healthBar.UpdateHealthBar(currentHealth, enemyStatus.HealthPoint);
+    }
+
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        healthBar.UpdateHealthBar(currentHealth, enemyStatus.HealthPoint);
         if (currentHealth <= 0)
         {
             Die();
@@ -46,6 +57,7 @@ public class EnemyStats : MonoBehaviour
 
     public void Die()
     {
+        audioManager.PlaySFX(audioManager.enemyDieSound);
         Destroy(gameObject);
     }
 
