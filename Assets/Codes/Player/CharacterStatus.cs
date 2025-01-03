@@ -29,8 +29,9 @@ public class CharacterStatus : MonoBehaviour
     public float level = 1;
     public float maxExperience;
 
-    // [SerializeField] HealthBarPlayer healthBar;
     [SerializeField] HealthBarPlayerUI healthBarUI;
+
+    [SerializeField] EnergyBarPlayerUI energyBarUI;
 
     [System.Serializable]
     public class LevelRange
@@ -70,9 +71,8 @@ public class CharacterStatus : MonoBehaviour
         currentProjectileSpeed = characterStatus.ProjectileSpeed;
         currentMagnetRange = characterStatus.MagnetRange;
 
-        // healthBar = GetComponentInChildren<HealthBarPlayer>();
         healthBarUI = GetComponentInChildren<HealthBarPlayerUI>();
-
+        energyBarUI = GetComponentInChildren<EnergyBarPlayerUI>();
 
         UpdateHealthBar();
         UpdateEnergyBar();
@@ -83,8 +83,8 @@ public class CharacterStatus : MonoBehaviour
     {
         // Set initial experience required for level up
         maxExperience = levelRanges[0].maxExperienceIncrease;
-        // healthBar.UpdateHealthBar(currentHealth, maxHealth);
         healthBarUI.UpdateHealthBar(currentHealth, maxHealth);
+        energyBarUI.UpdateEnergyBar(currentEnergy, maxEnergy);
     }
 
     void Update()
@@ -115,6 +115,7 @@ public class CharacterStatus : MonoBehaviour
 
         UpdateHealthBar();
         UpdateEnergyBar();
+        energyBarUI.UpdateEnergyBar(currentEnergy, maxEnergy);
     }
 
     // Add experience and handle level up
@@ -156,7 +157,6 @@ public class CharacterStatus : MonoBehaviour
         {
             currentHealth -= damage;
 
-            // healthBar.UpdateHealthBar(currentHealth, maxHealth);
             healthBarUI.UpdateHealthBar(currentHealth, maxHealth);
 
             UpdateHealthBar();
@@ -190,7 +190,7 @@ public class CharacterStatus : MonoBehaviour
             }
 
         }
-
+        healthBarUI.UpdateHealthBar(currentHealth, maxHealth);
         UpdateHealthBar();
     }
 
