@@ -12,17 +12,57 @@ public class AudioManager : MonoBehaviour
     public AudioClip backgroundMusic;
     public AudioClip shootSound;
     public AudioClip enemyDieSound;
+    public AudioClip lastBossMusic;
 
     public AudioClip PlayerDieSound;
 
     private void Start()
     {
-        musicSource.clip = backgroundMusic;
+        // Cari EnemySpawner untuk menentukan musik awal sesuai wave
+        EnemySpawner spawner = FindObjectOfType<EnemySpawner>();
+        if (spawner != null)
+        {
+            PlayBGM(spawner.currentWaveCount);  // Pastikan lagu sesuai wave saat game dimulai
+        }
+        else
+        {
+            // Fallback jika spawner tidak ditemukan
+            musicSource.clip = backgroundMusic;
+            musicSource.volume = 0.1f;
+            musicSource.loop = true;
+            musicSource.Play();
+        }
+    }
+
+    // Fungsi untuk memutar BGM sesuai wave
+    public void PlayBGM(int currentWaveCount)
+    {
+        if (currentWaveCount + 1 >= 10)  // Jika mencapai stage 10 atau lebih
+        {
+            lastBossMusicPlay();
+        }
+        else
+        {
+            if (musicSource.clip != backgroundMusic)
+            {
+                musicSource.clip = backgroundMusic;
+                musicSource.volume = 0.1f;
+                musicSource.loop = true;
+                musicSource.Play();
+            }
+        }
+    }
+
+    // Fungsi untuk memutar lagu boss terakhir
+    public void lastBossMusicPlay()
+    {
+        musicSource.clip = lastBossMusic;
         musicSource.volume = 0.1f;
         musicSource.loop = true;
         musicSource.Play();
     }
 
+    // Fungsi untuk memutar SFX
     public void PlaySFX(AudioClip clip)
     {
         sfxSource.volume = 0.1f;
