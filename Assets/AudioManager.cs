@@ -16,14 +16,14 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         musicSource.clip = backgroundMusic;
-        musicSource.volume = 0.2f;
+        musicSource.volume = 0.1f;
         musicSource.loop = true;
         musicSource.Play();
     }
 
     public void PlaySFX(AudioClip clip)
     {
+        sfxSource.volume = 0.1f;
         sfxSource.PlayOneShot(clip);
-        musicSource.volume = 0.1f;
     }
 }
