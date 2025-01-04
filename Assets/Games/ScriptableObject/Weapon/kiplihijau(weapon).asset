@@ -17,4 +17,4 @@ MonoBehaviour:
   speed: 10
   cooldown: 1
   specialCooldown: 4
-  pierce: 1
+  pierce: 3
