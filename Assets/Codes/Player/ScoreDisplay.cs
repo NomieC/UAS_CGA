@@ -24,7 +24,7 @@ public class ScoreDisplay : MonoBehaviour
         {
             if (scoreText != null)
             {
-                scoreText.text = "XP: " + playerStatus.totalExperience.ToString("0");
+                scoreText.text = "Score: " + playerStatus.totalExperience.ToString("0");
             }
 
             if (levelText != null)
