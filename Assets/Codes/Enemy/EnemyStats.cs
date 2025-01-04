@@ -57,8 +57,8 @@ public class EnemyStats : MonoBehaviour
 
     public void Die()
     {
-        audioManager.PlaySFX(audioManager.enemyDieSound);
         Destroy(gameObject);
+        audioManager.PlaySFX(audioManager.enemyDieSound);
     }
 
     private void OnCollisionStay(Collision other)
