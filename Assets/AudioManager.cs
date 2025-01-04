@@ -13,6 +13,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip shootSound;
     public AudioClip enemyDieSound;
 
+    public AudioClip PlayerDieSound;
+
     private void Start()
     {
         musicSource.clip = backgroundMusic;
@@ -25,5 +27,13 @@ public class AudioManager : MonoBehaviour
     {
         sfxSource.volume = 0.1f;
         sfxSource.PlayOneShot(clip);
+    }
+
+    public void StopMusic()
+    {
+        if (musicSource.isPlaying)
+        {
+            musicSource.Stop();
+        }
     }
 }

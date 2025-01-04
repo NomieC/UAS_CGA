@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CharacterStatus : MonoBehaviour
 {
@@ -29,6 +30,11 @@ public class CharacterStatus : MonoBehaviour
     public float level = 1;
     public float maxExperience;
     public float totalExperience = 0;  // Track total XP as score
+
+    [Header("player UI")]
+    [SerializeField] GameObject YouDied;
+
+    AudioManager audioManager;
 
     [SerializeField] HealthBarPlayerUI healthBarUI;
 
@@ -77,6 +83,8 @@ public class CharacterStatus : MonoBehaviour
 
         UpdateHealthBar();
         UpdateEnergyBar();
+
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 
     }
 
@@ -185,8 +193,35 @@ public class CharacterStatus : MonoBehaviour
     // Player death logic
     public void Die()
     {
+        // Hentikan BGM
+        if (audioManager != null)
+        {
+            audioManager.StopMusic();
+            audioManager.PlaySFX(audioManager.PlayerDieSound);
+        }
+
         Debug.Log("You died");
-        // Implement player respawn or restart logic here
+
+        // Tampilkan UI 'You Died'
+        if (YouDied != null)
+        {
+            YouDied.SetActive(true);
+        }
+
+        // Pause game (Freeze Time)
+        Time.timeScale = 0f;
+
+        // Mulai Coroutine untuk kembali ke Main Menu setelah 6 detik
+        StartCoroutine(LoadMainSceneWithDelay(6f));
+    }
+
+    IEnumerator LoadMainSceneWithDelay(float delay)
+    {
+        yield return new WaitForSecondsRealtime(delay);
+
+        Time.timeScale = 1f;
+
+        SceneManager.LoadScene(0);
     }
 
     // Heal health over time
