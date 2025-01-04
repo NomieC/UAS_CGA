@@ -33,14 +33,18 @@ public class EnemySpawner : MonoBehaviour
     bool waveActive = false;
     Transform player;
 
+    AudioManager audioManager;
+
     [Header("UI Settings")]
     public TextMeshProUGUI stagetext;
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<CharacterStatus>().transform;
+        audioManager = FindObjectOfType<AudioManager>();
         CountWaveQuota();
         UpdateStageDisplay();
+        audioManager.PlayBGM(currentWaveCount);
     }
 
     // Update is called once per frame
@@ -70,6 +74,20 @@ IEnumerator NextWave()
             currentWaveCount++;
             CountWaveQuota();
             UpdateStageDisplay();
+
+            if(audioManager != null)
+            {
+                audioManager.PlayBGM(currentWaveCount);
+            }
+
+            if (currentWaveCount + 1 >= 10)
+            {
+                GameObject[] healthBars = GameObject.FindGameObjectsWithTag("EnemyHealthBar");
+                foreach (GameObject healthBar in healthBars)
+                {
+                    healthBar.SetActive(false);
+                }
+            }
         }
     }
     void CountWaveQuota()
