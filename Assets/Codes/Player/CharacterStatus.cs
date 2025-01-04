@@ -122,8 +122,11 @@ public class CharacterStatus : MonoBehaviour
     // Add experience and handle level up
     public void AddExperience(int exp)
     {
+        Debug.Log("XP Received: " + exp);
         experience += exp;
         totalExperience += exp;
+
+        Debug.Log("Current XP: " + experience + "/" + maxExperience);
 
         while (experience >= maxExperience)
         {
