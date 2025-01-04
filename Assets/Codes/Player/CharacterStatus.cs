@@ -150,12 +150,6 @@ public class CharacterStatus : MonoBehaviour
             // Scale player stats on level up
             ScaleStatsByLevel();
         }
-
-        ScoreDisplay scoreDisplay = FindObjectOfType<ScoreDisplay>();
-    if (scoreDisplay != null)
-    {
-        scoreDisplay.UpdateScoreText();
-    }
     }
 
     // Take damage with invincibility and death checks
