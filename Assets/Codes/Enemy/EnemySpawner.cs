@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -31,11 +32,15 @@ public class EnemySpawner : MonoBehaviour
     public List<Transform> spawnPoints;
     bool waveActive = false;
     Transform player;
+
+    [Header("UI Settings")]
+    public TextMeshProUGUI stagetext;
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<CharacterStatus>().transform;
         CountWaveQuota();
+        UpdateStageDisplay();
     }
 
     // Update is called once per frame
@@ -64,6 +69,7 @@ IEnumerator NextWave()
             waveActive = false;
             currentWaveCount++;
             CountWaveQuota();
+            UpdateStageDisplay();
         }
     }
     void CountWaveQuota()
@@ -109,5 +115,9 @@ IEnumerator NextWave()
             }
         }
     }
+}
+void UpdateStageDisplay()
+{
+    stagetext.text = "Stage " + (currentWaveCount + 1).ToString();
 }
 }
