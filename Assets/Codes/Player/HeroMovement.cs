@@ -78,7 +78,12 @@ public class HeroMovement : MonoBehaviour
 
     void StopSprinting()
     {
-        isSprinting = false;
+        if (isSprinting)
+        {
+            isSprinting = false;
+            player.energyRegenTimer = player.energyRegenCooldown;  // Start regen cooldown
+        }
+
         if (energyDrainCoroutine != null)
         {
             StopCoroutine(energyDrainCoroutine);
@@ -88,15 +93,19 @@ public class HeroMovement : MonoBehaviour
 
     IEnumerator DrainEnergy()
     {
-        while (isSprinting && player.currentEnergy >= 10)
+        while (isSprinting && player.currentEnergy > 0)
         {
-            player.currentEnergy -= 10;
-            if (player.currentEnergy < 10)
+            // Drain energy gradually over time
+            player.currentEnergy -= 10 * Time.deltaTime;  // Adjust drain speed here
+
+            if (player.currentEnergy <= 0)
             {
+                player.currentEnergy = 0;
                 StopSprinting();
             }
-            yield return new WaitForSeconds(1f); // Drain energy every 1 second
+
+            yield return null;  // Wait for the next frame
         }
     }
-
+    
 }

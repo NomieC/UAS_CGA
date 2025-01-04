@@ -16,7 +16,13 @@ public class WeaponController : MonoBehaviour
     private float inputCooldown = 1f; // Minimum time between input presses
     private float currentInputCooldown = 0f; // Tracks the current time until the input can be registered again
 
+    AudioManager audioManager;
+
     // Start is called before the first frame update
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     protected virtual void Start()
     {
         hm = FindObjectOfType<HeroMovement>();
@@ -67,6 +73,7 @@ public class WeaponController : MonoBehaviour
 
     protected virtual void Shoot()
     {
+        audioManager.PlaySFX(audioManager.shootSound);
         // Handle the shooting logic here (e.g., spawn bullets, set direction, etc.)
         currentCooldown = weaponStatus.Cooldown; // Reset the cooldown after each shoot
     }

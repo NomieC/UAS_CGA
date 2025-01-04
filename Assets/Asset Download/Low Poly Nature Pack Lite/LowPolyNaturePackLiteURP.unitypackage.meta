@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Asset Download/Low Poly Nature Pack Lite/LowPolyNaturePackLiteURP.unitypackage.meta
 guid: a91539aacc5ed7f4da28820a1441fc55
 DefaultImporter:
+========
+guid: dbaba44727ce67446834cabb67db4c33
+PrefabImporter:
+>>>>>>>> david3:Assets/InGame UI/EnergyBarPlayerUI.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

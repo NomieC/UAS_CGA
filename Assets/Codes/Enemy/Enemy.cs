@@ -4,10 +4,12 @@ public class Enemy : MonoBehaviour
 {
     public EnemyScriptable enemyStatus;
     Transform player;
+    Animator anim;
     // Start is called before the first frame update
     private void Start()
     {
         player = FindObjectOfType<HeroMovement>().transform;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
