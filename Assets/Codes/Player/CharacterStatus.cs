@@ -28,6 +28,7 @@ public class CharacterStatus : MonoBehaviour
     public float experience = 0;
     public float level = 1;
     public float maxExperience;
+    public float totalExperience = 0;  // Track total XP as score
 
     [SerializeField] HealthBarPlayerUI healthBarUI;
 
@@ -122,6 +123,7 @@ public class CharacterStatus : MonoBehaviour
     public void AddExperience(int exp)
     {
         experience += exp;
+        totalExperience += exp;
 
         while (experience >= maxExperience)
         {
@@ -148,6 +150,12 @@ public class CharacterStatus : MonoBehaviour
             // Scale player stats on level up
             ScaleStatsByLevel();
         }
+
+        ScoreDisplay scoreDisplay = FindObjectOfType<ScoreDisplay>();
+    if (scoreDisplay != null)
+    {
+        scoreDisplay.UpdateScoreText();
+    }
     }
 
     // Take damage with invincibility and death checks
